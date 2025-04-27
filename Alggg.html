@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Счётчик и КПС тест</title>
+    <link rel="stylesheet" href="Alggg.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Счётчик</h1>
+        <div class="counter-container">
+            <h2 class="counter" id="counter">0</h2>
+            <div class="buttons">
+                <button id="increase">Увеличить</button>
+                <button id="decrease">Уменьшить</button>
+                <button id="reset">Сбросить</button>
+            </div>
+        </div>
+
+        <div class="cps-container">
+            <h2>Тест на скорость кликов</h2>
+            <div class="timer-panel">
+                <p>Осталось времени: <span id="timer">5</span> секунд</p>
+            </div>
+            <div class="clicks-panel">
+                <p>Клики: <span id="clickCount">0</span></p>
+            </div>
+            <button id="testButton">Начать тест (5 секунд)</button>
+            <div class="result-panel" style="display:none;">
+                <p>Вы кликнули: <span id="resultCount">0</span> раз(а)!</p>
+                <p>Среднее количество кликов в секунду: <span id="cpsCount">0</span></p>
+            </div>
+        </div>
+    </div>
+
+    <script src="Alggg.js"></script>
+</body>
+</html>
